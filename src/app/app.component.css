@@ -1,0 +1,23 @@
+/* Barre de navigation principale */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003973;
+  padding: 0px 20px; /* Ajoutez du rembourrage à gauche et à droite */
+  height: 60px; /* Hauteur de la barre de navigation */
+}
+
+/* Style des liens de navigation */
+.nav-links a {
+  color: white;
+  margin-left: 20px; /* Marge entre les liens */
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* Supprimez la décoration du lien */
+}
+
+/* Style pour les liens actifs */
+.nav-links a.active {
+  color: #ce5a1b; /* Couleur pour les liens actifs */
+}

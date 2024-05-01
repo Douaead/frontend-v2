@@ -1,0 +1,46 @@
+<div class="parent">
+  <div class="child">
+    <div nz-row class="imeDiv">
+      <h2 style="margin-left: auto; margin-right: auto;">Add Category</h2>
+    </div>
+    <form nz-form>
+      <!-- Section Upload Profile -->
+      <div class="category">
+        <div nz-row>
+          <div nz-col [nzSpan]="24">
+            <div class="profile-badge">
+              <label for="upload_profile_image" class="upload-label">
+                <img class="profile" alt="profile" />
+              </label>
+              <input type="file" nz-button nzType="primary" id="upload_profile_image" accept="image/x-png, image/gif, image/jpeg" />
+              <button nz-button nzShape="circle"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Section Upload Profile -->
+      
+      <!-- Section Name -->
+      <div class="category">
+        <div nz-row>
+          <div nz-col [nzSpan]="24" style="margin-top: 20px;">
+            <input nz-input placeholder="Name" />
+          </div>
+        </div>
+      </div>
+      <!-- Fin Section Name -->
+      
+      <!-- Section Description -->
+      <div class="category">
+        <div nz-row>
+          <div nz-col [nzSpan]="24">
+            <textarea rows="1" nz-input placeholder="Description"></textarea>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Section Description -->
+      
+      <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Add</button>
+    </form>
+  </div>
+</div>

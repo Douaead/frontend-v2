@@ -1,0 +1,21 @@
+<div class="bg" style="background-color: #F8F8F8;">
+    <div class="parent">
+        <div class="child">
+            <div nz-row class="imgDiv">
+                <div nz-col nzSpan="24">
+                    <h1 style="margin-left: 100px;">Login</h1>
+                </div>
+            </div>
+            <form nz-form [formGroup]="loginForm" class="login-form" (ngSubmit)="submitForm()">
+                <nz-input-group nzPrefixIcon="user">
+                    <input type="text" nz-input formControlName="email" placeholder="Email" />
+                </nz-input-group>
+                <nz-input-group nzPrefixIcon="lock">
+                    <input type="password" nz-input formControlName="password" placeholder="Password" />
+                </nz-input-group>
+                <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
+                <a routerLink="/signup">Or signup now!</a>
+            </form>
+        </div>
+    </div>
+</div>

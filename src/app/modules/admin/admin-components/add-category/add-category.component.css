@@ -1,0 +1,78 @@
+/* Style général */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Prend toute la hauteur de la vue */
+  background-color: #f0f2f5; /* Couleur de fond légère */
+}
+
+.child {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Boutons et inputs */
+input[type="file"],
+input[nz-input],
+textarea[nz-input],
+button[nz-button] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Assure que padding et border sont inclus dans la largeur */
+}
+
+input[type="file"] {
+  cursor: pointer;
+}
+
+button[nz-button] {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[nz-button]:hover {
+  background-color: #003580;
+}
+
+/* Style spécifique pour l'upload d'image */
+.profile-badge {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.upload-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-badge img.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #ddd; /* Bordure pour l'image */
+  background-color: #f0f2f5; /* Fond en cas d'absence d'image */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .child {
+    padding: 10px;
+    width: 90%;
+  }
+}
